@@ -59,10 +59,6 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 " View
 Plugin 'scrooloose/nerdtree'
-" NERDTree vs netrw
-" " Please note that NERDTree also has problems,
-" " when deal with a large directory (containing 2000+ files)
-" " NERDTree is too slow...
 let g:NERDTreeHighlightCursorline = 0
 let g:NERDTreeHijackNetrw = 0
 let g:NERDTreeWinSize = 40
@@ -70,6 +66,7 @@ let g:NERDTreeMinimalUI = 1
 let g:NERDTreeBookmarksFile = $VRT.'/.NERDTreeBookmarks'
 let g:NERDTreeIgnore = ['\.pyc$', '\~$', '\.class$']
 nnoremap <silent> <C-N> :sil! NERDTreeToggle<CR>
+nnoremap <silent> <C-M> :sil! NERDTreeFind<CR>
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
