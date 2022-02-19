@@ -1,8 +1,7 @@
 syntax on
-colorscheme wellsokai
 set ignorecase
-set smartcase         
-set expandtab    
+set smartcase
+set expandtab
 set tabstop=2
 set nu
 set updatetime=250
@@ -39,19 +38,17 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-" Vim Theme
+" Code
+Plugin 'fatih/vim-go'
 " Search
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 Plugin 'mileszs/ack.vim'
 nnoremap <C-A> :Ack!<Space>
-Plugin 'majutsushi/tagbar'
-nmap <C-B> :TagbarToggle<CR>
 " Git
 Plugin 'airblade/vim-gitgutter'
 " Distraction-Free Writting
-Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
-autocmd! User GoyoEnter Limelight
-autocmd! User GoyoLeave Limelight!
 " Status
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
