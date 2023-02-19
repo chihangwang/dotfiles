@@ -1,4 +1,5 @@
 syntax on
+colorscheme wellsokai
 set ignorecase
 set smartcase
 set expandtab
@@ -38,8 +39,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-" Code
-Plugin 'fatih/vim-go'
 " Search
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
